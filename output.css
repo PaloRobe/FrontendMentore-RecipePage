@@ -613,10 +613,6 @@ video {
   margin-top: 2rem;
 }
 
-.flex{
-  display: flex;
-}
-
 .table{
   display: table;
 }
@@ -629,6 +625,10 @@ video {
   width: 100%;
 }
 
+.border-collapse{
+  border-collapse: collapse;
+}
+
 .list-decimal{
   list-style-type: decimal;
 }
@@ -637,21 +637,41 @@ video {
   list-style-type: disc;
 }
 
-.items-center{
-  align-items: center;
+.border-0{
+  border-width: 0px;
 }
 
-.justify-start{
-  justify-content: flex-start;
+.border-b-2{
+  border-bottom-width: 2px;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
+.border-none{
+  border-style: none;
+}
+
+.border-White{
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
+}
+
+.border-b-Stone100{
+  --tw-border-opacity: 1;
+  border-bottom-color: hsl(30 54% 90% / var(--tw-border-opacity));
 }
 
 .bg-Rose50{
   --tw-bg-opacity: 1;
   background-color: hsl(330 100% 98% / var(--tw-bg-opacity));
+}
+
+.bg-Stone100{
+  --tw-bg-opacity: 1;
+  background-color: hsl(30 54% 90% / var(--tw-bg-opacity));
+}
+
+.bg-White{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
 .p-0{
@@ -677,20 +697,21 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.text-left{
-  text-align: left;
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.text-center{
-  text-align: center;
+.pl-2{
+  padding-left: 0.5rem;
 }
 
-.text-justify{
-  text-align: justify;
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
-.align-middle{
-  vertical-align: middle;
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .font-Outfit{
@@ -753,6 +774,12 @@ ul li::marker,ol li::marker {
   .sm\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:mt-\[120px\]{
+    margin-top: 120px;
   }
 }
 
